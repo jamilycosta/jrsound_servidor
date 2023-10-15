@@ -1,28 +1,29 @@
-import java.io.IOException;
+import java.io.*;
 import java.net.Socket;
-import java.util.Scanner;
 
+// classe que implementa a interface Runnable cujas instâncias são executadas por uma thread
 public class ConnectionHandler implements Runnable{
-    private Socket cliente;
+    private final Socket cliente;
 
     public ConnectionHandler(Socket cliente) {
         this.cliente = cliente;
     }
 
+    // implementação do método run que gerencia as conexões com os clientes
     @Override
     public void run() {
         System.out.println("Nova conexão com o cliente " +
                 cliente.getInetAddress().getHostAddress()
         );
-        Scanner s = null;
         try {
-            s = new Scanner(cliente.getInputStream());
-            while (s.hasNextLine()) {
-                System.out.println(
-                        cliente.getInetAddress().getHostAddress() + ": " + s.nextLine()
-                );
+            JRMPDecoder decoder = new JRMPDecoder(cliente);
+            BufferedReader in = new BufferedReader(new InputStreamReader(cliente.getInputStream()));
+            String s;
+            while ((s = in.readLine()) != null) {
+                System.out.println(cliente.getInetAddress().getHostAddress() + ": " + s);
+                decoder.decode(s);
             }
-            s.close();
+            in.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
