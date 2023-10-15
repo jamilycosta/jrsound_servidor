@@ -25,7 +25,7 @@ public class ConnectionHandler implements Runnable{
             }
             in.close();
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 }
