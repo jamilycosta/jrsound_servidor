@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-public interface JRPMPnterface {
+public interface JRMPInterface {
     void decode(String mensagem) throws IOException;
     void execute(String mensagem, String[] params) throws IOException;
     void tocar(String[] params);

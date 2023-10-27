@@ -1,12 +1,12 @@
-import java.io.IOException;
-import java.io.PrintStream;
+import java.io.*;
 import java.net.Socket;
 import java.util.Arrays;
 
-public class JRMPDecoder implements JRPMPnterface {
+public class JRMPDecoder implements JRMPInterface {
 
     private final Socket socket;
     private final PrintStream ps;
+    private String nomeMusica = "musica";
 
     public JRMPDecoder(Socket cliente) throws IOException {
         this.socket = cliente;
@@ -34,6 +34,7 @@ public class JRMPDecoder implements JRPMPnterface {
 
     @Override
     public void tocar(String[] params) {
+        // Não terá essa funcionalidade (feito apenas para teste)
         ps.println("@{REPRODUZIR "+ String.join(" ", params) +"}");
     }
 
@@ -49,7 +50,17 @@ public class JRMPDecoder implements JRPMPnterface {
 
     @Override
     public void enviar(String[] params) {
-
+        PrintWriter writer = null;
+        try {
+            writer = new PrintWriter("./music/+"+ this.nomeMusica +".jrmi", "UTF-8");
+            for(String param: params) {
+                writer.println(param);
+            }
+        } catch (FileNotFoundException | UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        } finally {
+            writer.close();
+        }
     }
 
     @Override
