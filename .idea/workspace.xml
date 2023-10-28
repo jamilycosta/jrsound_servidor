@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68141e83-c1bd-4196-966b-f524b18af87e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConnectionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConnectionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JRMPDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JRMPDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JRPMPnterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JRMPInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JRMPInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JRMPInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,19 +27,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Acer/Documents/.Desktop/IFG/.Tarefas e Materiais/4° Período/Redes de Computadores/JR Sound/jrsound_servidor&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/jrsound_servidor",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Acer\Documents\.Desktop\IFG\.Tarefas e Materiais\4° Período\Redes de Computadores\JR Sound\jrsound_servidor" />
@@ -60,6 +65,7 @@
       <workItem from="1698266810403" duration="1726000" />
       <workItem from="1698268727880" duration="36000" />
       <workItem from="1698373234270" duration="588000" />
+      <workItem from="1698446700003" duration="9599000" />
     </task>
     <servers />
   </component>

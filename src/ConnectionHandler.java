@@ -19,7 +19,8 @@ public class ConnectionHandler implements Runnable{
             JRMPDecoder decoder = new JRMPDecoder(cliente);
             BufferedReader in = new BufferedReader(new InputStreamReader(cliente.getInputStream()));
             String s;
-            while ((s = in.readLine()) != null) {
+            while (!cliente.isClosed()) {
+                s = in.readLine();
                 System.out.println(cliente.getInetAddress().getHostAddress() + ": " + s);
                 decoder.decode(s);
             }
