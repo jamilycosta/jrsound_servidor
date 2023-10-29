@@ -38,16 +38,20 @@ public class JRMPDecoder implements JRMPInterface {
     }
 
     @Override
-    public void tocar(String[] params) throws IOException {
-        FileReader fr = new FileReader("./music/" + String.join("_", params) + ".jrmi");
-        BufferedReader br = new BufferedReader(fr);
-        String jrmi = "";
-        String line;
+    public void tocar(String[] params) {
+        try {
+            FileReader fr = new FileReader("./music/" + String.join("_", params) + ".jrmi");
+            BufferedReader br = new BufferedReader(fr);
+            String jrmi = "";
+            String line;
 
-        while ((line = br.readLine()) != null) {
-            jrmi = jrmi + line + " ";
+            while ((line = br.readLine()) != null) {
+                jrmi = jrmi + line + " ";
+            }
+            ps.println("@{TOCAR " + jrmi + "}");
+        } catch(IOException e) {
+            e.printStackTrace();
         }
-        ps.println("@{TOCAR " + jrmi + "}");
     }
 
     @Override

@@ -7,9 +7,8 @@
     <list default="true" id="68141e83-c1bd-4196-966b-f524b18af87e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConnectionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConnectionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music/alecrim_dourado.jrmi" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JRMPDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JRMPDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JRMPInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JRMPInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +37,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
@@ -66,6 +65,7 @@
       <workItem from="1698268727880" duration="36000" />
       <workItem from="1698373234270" duration="588000" />
       <workItem from="1698446700003" duration="9599000" />
+      <workItem from="1698595895718" duration="763000" />
     </task>
     <servers />
   </component>
